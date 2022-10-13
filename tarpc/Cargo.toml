@@ -26,6 +26,7 @@ serde-transport-json = ["tokio-serde/json"]
 serde-transport-bincode = ["tokio-serde/bincode"]
 tcp = ["tokio/net"]
 unix = ["tokio/net"]
+quic = ["quinn"]
 
 full = [
     "serde1",
@@ -35,6 +36,7 @@ full = [
     "serde-transport-bincode",
     "tcp",
     "unix",
+    "quic",
 ]
 
 [badges]
@@ -60,6 +62,7 @@ tracing = { version = "0.1", default-features = false, features = [
 ] }
 tracing-opentelemetry = { version = "0.17.2", default-features = false }
 opentelemetry = { version = "0.17.0", default-features = false }
+quinn = "0.8.5"
 
 
 [dev-dependencies]
